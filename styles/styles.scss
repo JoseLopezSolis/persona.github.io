@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;1,100&display=swap");
+//sass --watch styles.scss styles.css
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(
+      49% 81% at 45% 47%,
+      #00000045 0%,
+      #f1f1f100 100%
+    ),
+    radial-gradient(113% 91% at 17% -2%, rgb(136, 136, 136) 1%, #ff000000 99%),
+    radial-gradient(142% 91% at 83% 7%, rgb(209, 178, 0) 1%, #ff000000 99%),
+    radial-gradient(142% 91% at -6% 74%, rgb(189, 0, 53) 1%, #ff000000 99%),
+    radial-gradient(142% 91% at 111% 84%, rgb(216, 94, 0) 0%, #ff0000ff 100%);
+}
+
+.container-card {
+  max-width: 2000px;
+  min-width: 1200px;
+  padding: 3rem;
+  .persona-container {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 2rem;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 380px auto;
+
+    .persona-img {
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      background-size: 100% 100%;
+      background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+      background-image: radial-gradient(
+          49% 81% at 45% 47%,
+          #00000045 0%,
+          #f1f1f100 100%
+        ),
+        radial-gradient(113% 91% at 17% -2%, #f5f5f5ff 1%, #ff000000 99%),
+        radial-gradient(142% 91% at 83% 7%, #ffdb00ff 1%, #ff000000 99%),
+        radial-gradient(142% 91% at -6% 74%, #ff0049ff 1%, #ff000000 99%),
+        radial-gradient(142% 91% at 111% 84%, #ff7000ff 0%, #ff0000ff 100%);
+      width: 19rem;
+      height: 36rem;
+      position: relative;
+
+      .message {
+        font-size: 0.9rem;
+        position: relative;
+        top: 20rem;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        padding: 1rem;
+        background-color: rgb(0, 0, 0, 0.2);
+        border-radius: 1rem;
+        margin: 1rem;
+      }
+
+      img {
+        padding: 0;
+        width: 20rem;
+        position: absolute;
+        top: -50px;
+        left: -10px;
+      }
+    }
+    .info-persona-section {
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr;
+      .personal-data {
+        font-size: 1rem;
+        padding: 2rem;
+        .data {
+          img {
+            width: 1.2rem;
+          }
+        }
+        .name {
+          color: #000;
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+      .skill-set {
+        background-color: rgb(0, 0, 0, 0.9);
+        padding: 2rem;
+        border-top-right-radius: 2rem;
+        .skill-title {
+          text-align: left;
+          margin-bottom: 1.2rem;
+          color: #ff7000ff;
+        }
+        .skill {
+          color: #fff;
+          font-size: 0.9rem;
+          display: grid;
+          grid-template-columns: 0.5fr 0.5fr;
+        }
+      }
+      .skills {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .bio {
+        margin-left: 1rem;
+        padding: 1.5rem;
+        text-align: justify;
+        .bio-header {
+          text-align: left;
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          font-weight: 500;
+        }
+      }
+      .favorite-brands {
+        background-color: rgb(0, 0, 0, 0.9);
+
+        .brands-header {
+          color: #ff7000ff;
+          text-align: left;
+          font-size: 1.5rem;
+          padding: 1rem;
+          font-weight: bold;
+        }
+        .brands {
+          display: flex;
+          img {
+            width: 100px;
+            border-radius: 50%;
+            margin-left: 2rem;
+          }
+        }
+      }
+      .wants-needs {
+        padding: 2rem;
+        .wants-needs-header {
+          font-weight: 500;
+          font-size: 1.2rem;
+          padding: 0.5rem;
+        }
+        .needs {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;1,100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(49% 81% at 45% 47%, rgba(0, 0, 0, 0.2705882353) 0%, rgba(241, 241, 241, 0) 100%), radial-gradient(113% 91% at 17% -2%, rgb(136, 136, 136) 1%, rgba(255, 0, 0, 0) 99%), radial-gradient(142% 91% at 83% 7%, rgb(209, 178, 0) 1%, rgba(255, 0, 0, 0) 99%), radial-gradient(142% 91% at -6% 74%, rgb(189, 0, 53) 1%, rgba(255, 0, 0, 0) 99%), radial-gradient(142% 91% at 111% 84%, rgb(216, 94, 0) 0%, red 100%);
+}
+
+.container-card {
+  max-width: 2000px;
+  min-width: 1200px;
+  padding: 3rem;
+}
+.container-card .persona-container {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  border-radius: 2rem;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 380px auto;
+}
+.container-card .persona-container .persona-img {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(49% 81% at 45% 47%, rgba(0, 0, 0, 0.2705882353) 0%, rgba(241, 241, 241, 0) 100%), radial-gradient(113% 91% at 17% -2%, whitesmoke 1%, rgba(255, 0, 0, 0) 99%), radial-gradient(142% 91% at 83% 7%, #ffdb00 1%, rgba(255, 0, 0, 0) 99%), radial-gradient(142% 91% at -6% 74%, #ff0049 1%, rgba(255, 0, 0, 0) 99%), radial-gradient(142% 91% at 111% 84%, #ff7000 0%, red 100%);
+  width: 19rem;
+  height: 36rem;
+  position: relative;
+}
+.container-card .persona-container .persona-img .message {
+  font-size: 0.9rem;
+  position: relative;
+  top: 20rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.container-card .persona-container .persona-img img {
+  padding: 0;
+  width: 20rem;
+  position: absolute;
+  top: -50px;
+  left: -10px;
+}
+.container-card .persona-container .info-persona-section {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+}
+.container-card .persona-container .info-persona-section .personal-data {
+  font-size: 1rem;
+  padding: 2rem;
+}
+.container-card .persona-container .info-persona-section .personal-data .data img {
+  width: 1.2rem;
+}
+.container-card .persona-container .info-persona-section .personal-data .name {
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.container-card .persona-container .info-persona-section .skill-set {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  border-top-right-radius: 2rem;
+}
+.container-card .persona-container .info-persona-section .skill-set .skill-title {
+  text-align: left;
+  margin-bottom: 1.2rem;
+  color: #ff7000;
+}
+.container-card .persona-container .info-persona-section .skill-set .skill {
+  color: #fff;
+  font-size: 0.9rem;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+}
+.container-card .persona-container .info-persona-section .skills {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.container-card .persona-container .info-persona-section .bio {
+  margin-left: 1rem;
+  padding: 1.5rem;
+  text-align: justify;
+}
+.container-card .persona-container .info-persona-section .bio .bio-header {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.container-card .persona-container .info-persona-section .favorite-brands {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.container-card .persona-container .info-persona-section .favorite-brands .brands-header {
+  color: #ff7000;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+.container-card .persona-container .info-persona-section .favorite-brands .brands {
+  display: flex;
+}
+.container-card .persona-container .info-persona-section .favorite-brands .brands img {
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+.container-card .persona-container .info-persona-section .wants-needs {
+  padding: 2rem;
+}
+.container-card .persona-container .info-persona-section .wants-needs .wants-needs-header {
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+.container-card .persona-container .info-persona-section .wants-needs .needs {
+  margin-left: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
